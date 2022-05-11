@@ -1,9 +1,9 @@
 body{
-    background-color: #1A759F;
+    background-color: #6C6E49;
 }
 
 header{
-    background-color: #184E77;
+    background-color: #46543B;
 }
 
 a:hover{
@@ -25,8 +25,8 @@ nav a {
 }
 
 nav a:hover{
-    background-color: #99D98C;
-    color: white;
+    background-color: #7BA2A3;
+    color: #011628;
 }
 
 main section {
@@ -34,7 +34,7 @@ main section {
 }
 
 footer{
-    background-color: #184E77;
+    background-color: #6C6E49;
     text-decoration: underline;
 }
 
@@ -48,12 +48,12 @@ footer a{
 }
 
 footer a:hover{
-    color:#99D98C;
+    color:#011628;
 }
 
 #background {
     height: 725px;
-    background-color: #1A759F;
+    background-color: transparent;
 }
 
 #content {
@@ -74,14 +74,14 @@ footer a:hover{
 }
 
 .book{
-    background-color: #1A759F;
+    background-color: transparent;
     color: white;
     text-decoration: none;
 }
 
 .book:hover{
-    background-color: #99D98C;
-    color: white;
+    background-color: #7BA2A3;
+    color: #011628;
 }
 
 .button-box{
@@ -97,14 +97,14 @@ footer a:hover{
 }
 
 .join{
-    background-color: #1A759F;
+    background-color: transparent;
     color: white;
     text-decoration: none;
 }
 
 .join:hover{
-    background-color: #99D98C;
-    color: white;
+    background-color: #7BA2A3;
+    color: #011628;
 }
 
 .logo{
@@ -112,8 +112,8 @@ footer a:hover{
 }
 
 .msg{
-    background-color: #1A759F;
-    color: white;
+    background-color: transparent;
+    color: #011628;
 }
 
 .msg h2{
