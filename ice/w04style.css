@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap/css2?family=Inter&display=swap');
+
+body{
+    background-color: #FCA6C9;
+}
+
+#white-text{
+    text-align: center;
+    color: #ffffff;
+    font-family: serif;
+}
+
+.quote-reference{
+    font-weight: bold;
+    font-size: large;
+}
+
+#numbered-table{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50px
+    color: black;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+}
+
+#quote{
+    text-align: center;
+    color: white;
+    font-family: serif;
+    font-size: larger;
+}
+
+#nelson{
+    text-align: center;
+    color: black;
+    font: bold; 
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    height: auto;
+}
+
+.title{
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 40px; 
+}
+
+.title:hover{ 
+    font-family: 'Inter', sans-serif;
+    color: black;
+    font: bold;
+}
+
+
+/* Color: FCA6C9 Fonts: <style>
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+</style> ||||| font-family: 'PT Serif', serif;
+
+To bold text simply for decoration, use the CSS font-weight property instead of the HTML strong element. 
+Let's say you want to bold a word in a paragraph  you'd wrap the word in <span> tags and use a 
+CSS class selector to apply the font-weight property to the specific span element only.
+
+Title font: <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet"> |||||
+
+font-family: 'Inter', sans-serif;
+
+
+
+Html import: <style>
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+</style>
+*/
