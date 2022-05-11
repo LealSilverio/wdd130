@@ -1,17 +1,31 @@
 body{
-    background-color: #184E77;
+    background-color: #1A759F;
 }
 
 header{
-    background-color: #99D98C;
+    background-color: #184E77;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+h3{
+    text-decoration: underline;
+}
+
+h4{
+    color: white;
 }
 
 nav a {
     text-align: center;
+    color: white;
+    text-decoration: none;
 }
 
 nav a:hover{
-    background-color: #184E77;
+    background-color: #99D98C;
     color: white;
 }
 
@@ -20,7 +34,26 @@ main section {
 }
 
 footer{
-    background-color: white;
+    background-color: #184E77;
+    text-decoration: underline;
+}
+
+footer h3{
+    color:white;
+}
+
+footer a{
+    color:white;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color:#99D98C;
+}
+
+#background {
+    height: 725px;
+    background-color: #1A759F;
 }
 
 #content {
@@ -28,9 +61,8 @@ footer{
     margin: 0 auto;
 }
 
-#background {
-    height: 725px;
-    background-color: white;
+#hero-img{
+    width: 100%;
 }
 
 #hero-msg h1{
@@ -41,30 +73,53 @@ footer{
     text-align: center;
 }
 
+.book{
+    background-color: #1A759F;
+    color: white;
+    text-decoration: none;
+}
+
+.book:hover{
+    background-color: #99D98C;
+    color: white;
+}
+
 .button-box{
     text-align: center;
 }
 
-.book{
-    background-color: white;
+.home-title{
+    color:white;
 }
 
-.book:hover{
-    background-color: white;
+.icon{
+    width: 80px;
 }
 
 .join{
-    background-color: white;
+    background-color: #1A759F;
+    color: white;
+    text-decoration: none;
 }
 
 .join:hover{
-    background-color: white;
+    background-color: #99D98C;
+    color: white;
+}
+
+.logo{
+    width: 80px;
 }
 
 .msg{
-    background-color: white;
+    background-color: #1A759F;
+    color: white;
 }
 
-.home-title{
-    color:#184E77;
+.msg h2{
+    color:white;
+}
+
+.msg p{
+    color: white;
 }
