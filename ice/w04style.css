@@ -26,13 +26,18 @@ body{
 
 #quote{
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
     color: white;
     font-family: serif;
-    font-size: larger;
+    font-size: 40px;
 }
 
 #nelson{
     text-align: center;
+    margin: auto;
+    width: 350px;
     color: black;
     font: bold; 
 }
