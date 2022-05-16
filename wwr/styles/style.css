@@ -4,126 +4,102 @@ body{
     background-color: #6C6E49;
     font-size: 22px;
 }
-
 header{
     background-color: #46543B;
 }
-
 a:hover{
     text-decoration: underline;
 }
-
 h3{
     text-decoration: underline;
 }
-
 h4{
     color: white;
 }
-
 nav a {
     text-align: center;
     color: white;
     text-decoration: none;
 }
-
 nav a:hover{
     background-color: #7BA2A3;
     color: #011628;
 }
-
 main section {
     text-align: center;
 }
-
 footer{
     background-color: #6C6E49;
     text-decoration: underline;
 }
-
 footer h3{
     color:white;
 }
-
 footer a{
     color:white;
     text-decoration: none;
 }
-
 footer a:hover{
     color:#011628;
 }
-
 #background {
     height: 725px;
     background-color: transparent;
 }
-
 #content {
     max-width: 1600px;
     margin: 0 auto;
 }
-
 #hero-img{
     width: 100%;
 }
-
 #hero-msg h1{
     text-align: center;
 }
-
 #hero-msg h4{
     text-align: center;
 }
-
 .book{
     background-color: transparent;
     color: white;
     text-decoration: none;
     font-size: 18px;
 }
-
 .book:hover{
     background-color: #7BA2A3;
     color: #011628;
 }
-
 .button-box{
     text-align: center;
 }
-
+.social{
+    text-decoration: none;
+}
 .home-title{
     color:white;
 }
-
 .icon{
     width: 80px;
 }
-
 .join{
     background-color: transparent;
     color: white;
     text-decoration: none;
 }
-
 .join:hover{
     background-color: #7BA2A3;
     color: #011628;
 }
-
 .logo{
     width: 80px;
 }
-
 .msg{
     background-color: transparent;
     color: #011628;
 }
-
 .msg h2{
     color:white;
 }
-
 .msg p{
     color: white;
 }
