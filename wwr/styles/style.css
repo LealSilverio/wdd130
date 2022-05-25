@@ -69,9 +69,7 @@ footer .social img{
 #hero-img{
     width: 100%;
 }
-#hero-msg h1{
-    text-align: center;
-}
+#hero-msg h1,
 #hero-msg h4{
     text-align: center;
 }
@@ -123,15 +121,12 @@ footer .social img{
     font-size: 0.8em;
     padding-bottom: 15px;
 }
-.rivers-card{
-    margin: 200px 0;
-}
-.camping-card{
-    margin: 200px 0;
-}
+.rivers-card,
+.comping-card,
 .rapids-card{
     margin: 200px 0;
 }
-.social a{
+
+.social a, .social a:link, .social a:active, .social a:hover, .social a:visited{
     text-decoration: none;
 }
