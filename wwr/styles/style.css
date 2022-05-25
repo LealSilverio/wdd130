@@ -127,6 +127,6 @@ footer .social img{
     margin: 200px 0;
 }
 
-.social a, .social a:link, .social a:active, .social a:hover, .social a:visited{
-    text-decoration: none;
+.social {
+    font-size: 0;
 }
