@@ -3,7 +3,7 @@
 /* MUST ADD FONT FAMILIES */
 
 body{
-    background-color: #6C6E49;
+    background-color: white;
     font-size: 22px;
     margin: 0;
     padding: 0;
@@ -70,7 +70,7 @@ footer .social img{
 }
 #background {
     height: 725px;
-    background-color: transparent;
+    background-color: #d9c2a3;
     grid-column: 1/11;
     grid-row: 4/9;
 }
@@ -163,8 +163,7 @@ footer .social img{
     box-shadow: 5px 5px 10px #6f7364;   
 }
 .msg{
-    background-color: transparent;
-    color: #011628;
+    background-color: #6C6E49;
     line-height: 1.5em;
     padding: 35px;
     grid-column: 6/10;
