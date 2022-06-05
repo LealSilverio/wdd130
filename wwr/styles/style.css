@@ -70,7 +70,7 @@ footer .social img{
 }
 #background {
     height: 725px;
-    background-color: #d9c2a3;
+    background-color: #7BA2A3;
     grid-column: 1/11;
     grid-row: 4/9;
 }
@@ -129,7 +129,7 @@ footer .social img{
     grid-row: 2/3;
 }
 .card-img{
-    border: solid #d9c2a3 10px;
+    border: solid #7BA2A3 10px;
     transition: transform .5s;
     box-shadow: 5px 5px 10px #6f7364;
 }
