@@ -1,45 +1,99 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@500&display=swap');
 
 body{
     margin: none;
     padding: none;
+    background-color: #CFCECE;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 350px 350px;
-    justify-items: center; 
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, auto);
+    justify-content: center;
+    justify-items: center;
 }
-#left   {
-    color: black;
-    font-size: 95px;
-    font-family: 'Lora', 'Times New Roman', serif;
-    letter-spacing: 35px;
+header{
+    background-color: #FFFEFE;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-row: 1/2;
-    grid-column: 1/3;
-    position: relative;
+    z-index: 1;
+    grid-column: 1;
 }
-#bottom {
-    color: #c62a2c;
-    font-size: 55px;
-    font-family: 'Lora', 'Times New Roman', serif;
-    position: relative;
-    grid-column: 2/3;
-    grid-row: 2/3;
-    letter-spacing: 20px;
+.name{
+    grid-column: 3/4;
+    color: #858D98;
+    z-index: 1;
+    /* grid-column: 1; */
 }
-.cherry {
-    position: relative;
-    z-index: -1;
+.logo-text, .delta-logo{
     grid-column: 1/2;
-    grid-row: 1/3;
+    color: #858D98;
+    z-index: 1;
+    /* grid-column: 1; */
 }
-.color-box{
-    background-color: #B8B9B9;
-    position: relative;
-    grid-column: 2/3;
-    grid-row: 1/3;
-    z-index: -1;
-    height: 100%;
-    width: 100%;
+.logo-text{
+    font-size: smaller;
+    z-index: 1;
+    /* grid-column: 1; */
 }
-/* color for the text "Cherries" :  
-font-family: 'Lora', serif;   |   https://stackoverflow.com/questions/26918742/text-overlap-on-image-with-css*/
+.bluebar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #001b36;
+    color: #2c465f;
+    justify-content: center;
+    justify-items: center;
+    padding: 20px 60px;
+    grid-row: 2/3;
+    z-index: 1;
+    grid-column: 1;
+}
+.arrival-time{
+    grid-column: 3/4;
+    z-index: 1;
+    /* grid-column: 1; */
+}
+.destination{
+    grid-column: 3/4;
+    z-index: 1;
+    /* grid-column: 1; */
+}
+.departure, .arrival{
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+    z-index: 1;
+    /* grid-column: 1; */
+}
+.info{
+    background-color: #f0f0f1;
+    color: #1d2a33;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row: 3/4;
+    z-index: 1;
+    grid-column: 1;
+}
+.background-shape{
+    background-color: white;
+    color: white;
+    justify-content: center;
+    justify-items: center;
+    width: 450px;
+    border-radius: 25px;
+    z-index:-5;
+    grid-row: 1/6; 
+    grid-column: 1;   
+}
+.barcode{
+    grid-row: 4/5;
+    z-index: 1;
+    grid-column: 1;
+}
+footer{
+    grid-row: 5/6;
+    z-index: 1;
+    grid-column: 1;
+}
+
+ /* info-info: #525963 */
+/* fonts (bluebar bold words:Roboto, sans-serif) ( Everything else I think is: Open Sans, sans-serif) */
