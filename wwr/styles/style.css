@@ -9,12 +9,10 @@ body{
     padding: 0;
 }
 header{
-    background-color: #46543B;
+    background-color: #00241B;
     display: grid;
     grid-template-columns: 150px auto;
-}
-a:hover{
-    text-decoration: underline;
+    align-items: center;
 }
 h2 {
     margin: 0;
@@ -22,22 +20,19 @@ h2 {
 h3{
     text-decoration: underline;
 }
-h4{
-    color: white;
-}
 nav {
     display: flex;
     justify-content: space-around;
 }
 nav a {
     text-align: center;
-    color: white;
+    color: #C2D3CD;
     text-decoration: none;
     padding: 35px;
 }
 nav a:hover{
-    background-color: #7BA2A3;
-    color: #011628;
+    background-color: #75c09a;
+    color: #3F251B;
 }
 main section {
     text-align: center;
@@ -46,31 +41,31 @@ main section img{
     box-sizing: border-box;
 }
 footer{
-    background-color: #6C6E49;
+    background-color: #00241B;
     text-decoration: underline;
     padding: 25px 50px;
     margin: 200px 0;
     display: flex;
     justify-content: space-around;
     align-items: center;
-
+    font-size: .7em;
 }
 footer h3{
-    color: white;
+    color: #C2D3CD;
 }
 footer a{
-    color: white;
+    color: #C2D3CD;
     text-decoration: none;
 }
 footer a:hover{
-    color: #011628;
+    color: #75C09A;
 }
 footer .social img{
     padding-top: 15px;
 }
 #background {
     height: 725px;
-    background-color: #7BA2A3;
+    background-color: #acdaca;
     grid-column: 1/11;
     grid-row: 4/9;
 }
@@ -101,25 +96,34 @@ footer .social img{
 }
 #hero-msg h4{
     text-align: center;
-    color: white;
+    color: #9ac2b7;
 }
 #logo_link{
     padding-top: 5px;
     justify-self: center;
     align-self: center;
 }
-.book, .join{
-    background-color: transparent;
-    color: white;
+.book{
+    background-color: #9ac2b7;
+    color: #3F251B;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 1em;
+    padding: 15px 30px;
+    margin: 200px 0;
+    border-radius: 5px;
+}
+.join{
+    background-color: #9ac2b7;
+    color: #3F251B;
+    text-decoration: none;
+    font-size: 1em;
     padding: 15px 30px;
     margin: 200px 0;
     border-radius: 5px;
 }
 .book:hover, .join:hover{
-    background-color: #7BA2A3;
-    color: #011628;
+    background-color: #75C09A;
+    color: #3F251B;
 }
 .button-box{
     text-align: center;
@@ -129,7 +133,7 @@ footer .social img{
     grid-row: 2/3;
 }
 .card-img{
-    border: solid #7BA2A3 10px;
+    border: solid #75c09a 10px;
     transition: transform .5s;
     box-shadow: 5px 5px 10px #6f7364;
 }
@@ -145,9 +149,9 @@ footer .social img{
     grid-template-columns: repeat(10, 1fr);
 }
 .home-title{
-    color: white;
-    font-size: 2em;
-    margin: 200px 0;
+    color: #C2D3CD;
+    font-size: 2.5em;
+    margin: 50px 0 20px 0;
 }
 .icon{
     width: 80px;
@@ -155,6 +159,7 @@ footer .social img{
 }
 .logo{
     width: 80px;
+    margin: 5px 0 0 40px;
 }
 .mountains{
     width: 100%;
@@ -163,7 +168,7 @@ footer .social img{
     box-shadow: 5px 5px 10px #6f7364;   
 }
 .msg{
-    background-color: #6C6E49;
+    background-color: #3F251B;
     line-height: 1.5em;
     padding: 35px;
     grid-column: 6/10;
@@ -171,12 +176,14 @@ footer .social img{
     box-shadow: 5px 5px 10px #6f7364;
 }
 .msg h2{
-    color: white;
+    color: #C2D3CD;
 }
 .msg p{
-    color: white;
-    font-size: 0.8em;
-    padding-bottom: 15px;
+    color: #C2D3CD;
+    font-size: 0.75em;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-align: justify;
 }
 .rapids-card{
     grid-column: 8/10;

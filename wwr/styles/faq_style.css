@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&family=Vollkorn&display=swap');
+
+/* MUST ADD FONT FAMILIES */
+
+body{
+    background-color: white;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: #00241B;
+    display: grid;
+    grid-template-columns: 150px auto;
+    align-items: center;
+}
+#content{
+    max-width: 1600px;
+    margin: 0 auto;
+}
+h3{
+    text-decoration: underline;
+}
+#logo_link{
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+}
+.logo{
+    width: 80px;
+    margin: 5px 0 0 40px;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+}
+nav a{
+    text-align: center;
+    color: #C2D3CD;
+    text-decoration: none;
+    padding: 35px;
+}
+nav a:hover{
+    background-color: #75c09a;
+    color: #3F251B;
+}
+main section {
+    text-align: center;
+}
+main section img{
+    box-sizing: border-box;
+}
+.home-title{
+    color: #00241B;
+    margin: 60px 25px 50px 65px;
+}
+.accordion{
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 80%;
+    margin-left: 140px;
+    margin-top: 5px;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+.active, .accordion:hover{
+    background-color: #ccc;
+}
+.accordion:after{
+    content: '\02795';
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+.active:after{
+    content: "\2796";
+}
+.panel{
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    margin-left: 130px;
+    margin-right: 140px;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+footer{
+    background-color: #00241B;
+    text-decoration: underline;
+    padding: 25px 50px;
+    margin: 200px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: .7em;
+}
+footer h3{
+    color: #C2D3CD;
+}
+footer a{
+    color: #C2D3CD;
+    text-decoration: none;
+}
+footer a:hover{
+    color: #75C09A;
+}
+.social{
+    font-size: 0;
+}
+footer .social img{
+    padding-top: 15px;
+}
+@media screen and (max-width: 900px) {
+    #hero, .home-grid {
+        display: block;
+        height: auto;
+    }
+    nav, footer {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+    #hero {
+        margin-top: 0;
+    }
+    #hero-msg {
+        margin-top: 0;
+    }
+    #hero-msg h4 {
+        display: none;
+    }
+    .home-title {
+        font-size: 25px;
+        color: #6f7364;
+    }
+    .rivers-card, .camping-card, .rapids-card { 
+        margin: 50px auto;
+        width: 60%;
+    }
+    #background {
+        display: none;
+    }
+    .mountains, .msg {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+    footer {
+        margin-top: 25px;
+    }
+}
