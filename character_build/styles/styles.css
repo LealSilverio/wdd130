@@ -1,3 +1,25 @@
 body{
-    margin:0;
+    margin: 0;
+	font-size: 12px;
+	padding: 0;
+	background-color: #b1bcdd;
+}
+.logo{
+	width: 50px;
+}
+.adventure img{
+	width: 100%;
+}
+.adventure h2{
+	font-size: 2.5em;
+	position: absolute;
+	top: 7%;
+	left: 54%;
+	transform: translate(-50%, -50%);
+	line-height: 135%;
+}
+.purpose{
+	font-size: 1.5em;
+	text-align: left;
+	margin: 50px 300px;
 }
