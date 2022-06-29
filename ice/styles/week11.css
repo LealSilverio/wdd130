@@ -58,3 +58,6 @@ p{
 .post-messages{
     margin-right: auto;
 }
+.fa-heart:hover{
+    color: red;
+}
