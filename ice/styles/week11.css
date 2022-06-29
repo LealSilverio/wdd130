@@ -1,0 +1,63 @@
+body{
+    margin: none;
+    padding: none;
+    max-width: 500px;
+    font-size: 12px;
+}
+h1{
+    color: #575757;
+    margin-right: auto;
+}
+div{
+    margin: auto;
+}
+a{
+    text-decoration: none;
+}
+i{
+    color: #BDBDBC;
+    font-size: 1.6em;
+    margin: auto;
+}
+p{
+    color: #8F8E8E;
+    font-size: 1.4em;
+}
+.user{
+    width: 50px;
+    height: auto;
+    border-radius: 50%;
+}
+.scene{
+    width: 500px;
+    height: auto;
+}
+.post-top{
+    justify-content: center;
+    justify-items: center;
+    padding: 10px 0;
+    display: grid;
+    grid-template-columns: 2fr 3fr 4fr 2fr 1fr;
+}
+.post-bottom{
+    justify-content: center;
+    justify-items: center;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+.post-time{
+    color: #E4E4E4;
+    font-size: 1.3em;
+    grid-column-start: 4;
+    margin-left: auto;
+}
+.post-likes{
+    grid-column-start: 9;
+    margin-left: auto;
+}
+.post-messages{
+    margin-right: auto;
+}
+.user-name ,.user-name a, .user-name h1{
+    margin: auto;    
+}

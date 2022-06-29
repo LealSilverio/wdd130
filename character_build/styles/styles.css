@@ -4,19 +4,38 @@ body{
 	padding: 0;
 	background-color: #b1bcdd;
 }
+header{
+    background-color: #00241B;
+    display: grid;
+    grid-template-columns: 150px auto;
+    align-items: center;
+}
+h2 {
+    margin: 0;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+nav a {
+    text-align: center;
+    color: #C2D3CD;
+    text-decoration: none;
+    padding: 35px;
+}
+nav a:hover{
+    background-color: #75c09a;
+    color: #3F251B;
+}
 .logo{
 	width: 50px;
 }
-.adventure img{
+img{
 	width: 100%;
 }
-.adventure h2{
+h2{
 	font-size: 2.5em;
-	position: absolute;
-	top: 7%;
-	left: 54%;
-	transform: translate(-50%, -50%);
-	line-height: 135%;
+	text-align: center;
 }
 .purpose{
 	font-size: 1.5em;
