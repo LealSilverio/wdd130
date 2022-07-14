@@ -4,38 +4,46 @@ body{
 	padding: 0;
 	background-color: #b1bcdd;
 }
-.logo{
-	width: 50px;
-}
-.adventure img{
-	width: 100%;
-}
-.adventure h2{
-	font-size: 2.5em;
-	position: absolute;
-	top: 7%;
-	left: 54%;
-	transform: translate(-50%, -50%);
-	line-height: 135%;
-}
-.purpose{
-	font-size: 1.5em;
-	text-align: justify;
-	margin: 50px 400px;
-}
-.button-box{
-	text-align: center;
-}
-.create, .display{
+#navbar{
+    overflow: hidden;
     background-color: #b1bcdd;
-    color: #3F251B;
+}
+#navbar a{
+    float: left;
+    display: block;
+    color: #9283ad;
+    text-align: center;
+    padding: 14px;
     text-decoration: none;
-    font-size: 1em;
-    padding: 15px 30px;
-    margin: 200px 0;
-    border-radius: 5px;
 }
-.create:hover, .display:hover{
-    background-color: #b1bcdd;
-    color: #3F251B;
+.content{
+    padding: 16px;
 }
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.sticky + .content{
+    padding-top: 60px;
+}
+.logo{
+	width: 40px;
+}
+.main_info{
+	display: flex; 
+}
+textarea{
+	font-size: 12px;
+	text-align: left;
+	width: calc(100% - 20px - 2px);
+	border-radius: 10px;
+	padding: 10px;
+	resize: none;
+	overflow: hidden;
+	height: 15em;
+}
+input[type=checkbox] {
+	cursor: pointer;
+}
+  
