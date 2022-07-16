@@ -55,21 +55,406 @@ h3{
 .sticky + .content{
     padding-top: 60px;
 }
-
+.character_sheet{
+    width: 800px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.top_info{
+    display: flex;
+    align-items: stretch;
+}
+.name{
+    border: 1px solid black;
+    border-right: 0;
+    border-radius: 10px 0 0 10px;
+    padding: 5px 0;
+    background-color: #eee;
+    width: 30%;
+    display: flex;
+    flex-direction: column-reverse;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+}
+.name input{
+    padding: 0.5em;
+    margin: 5px;
+    border: 0;
+}
+.name label{
+    padding-left: 1em;
+}
+.other_info{
+    width: 70%;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+.other_info ul{  
+    padding: 10px 0px 5px 0px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.other_info li{
+    width: 33.33333%;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.other_info label{
+    margin-bottom: 5px;
+}
+.other_info input{
+    border: 0;
+    border-bottom: 1px solid #ddd;
+}
 .main_info{
 	display: flex; 
+    justify-content: space-between;
+    margin-top: 20px;
 }
-textarea{
-	font-size: 12px;
-	text-align: left;
-	width: calc(100% - 20px - 2px);
-	border-radius: 10px;
-	padding: 10px;
-	resize: none;
-	overflow: hidden;
-	height: 15em;
+.label-container {
+    position: relative;
+    width: 100%;
+    height: 18px;
+    margin-top: 6px;
+    border: 1px solid black;
+    border-left: 0;
+    text-align: center;
 }
-input[type=checkbox] {
-	cursor: pointer;
+.left, .middle, .right{
+    width: 32%;
+    display: flex;
+    flex-direction: column;
 }
-  
+.attributes{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.stats{
+    width: 101px;
+    background-color: #bbb;
+    border-radius: 10px;
+    padding-bottom: 5px;
+}
+.stats label{
+    font-size: 8px;
+    font-weight: bold;
+}
+.stats ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+.stats li{
+    height: 80px;
+    width: 70px;
+    background-color: white;
+    border: 1px solid black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+.stats input{
+    width: 100%;
+    padding: 0;
+    border: 0;
+}
+.score input{
+    text-align: center;
+    font-size: 40px;
+    padding: 2px 0px 0px 0px;
+    background: white;
+}
+.modifier{
+    margin-top: 3px;
+}
+.modifier input{
+    background: white;
+    width: 30px;
+    height: 20px;
+    border: 1px inset black;
+    border-radius: 20px;
+    margin: -1px;
+    text-align: center;
+}
+.inspiration_box{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+.inspiration_box input{
+    border: 1px solid black;
+    padding: 15px;
+    border-radius: 10px;
+}
+.proficiency_box{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+.proficiency_box input{
+    width: 30px;
+    height: 28px;
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 10px;
+}
+.list_section{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px 5px;
+}
+.list_section .label{
+    margin-top: 10px;
+    margin-bottom: 2.5px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: bold;
+}
+.list_section li{
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+}
+.list_section label{
+    text-transform: none;
+    font-size: 8px;
+    text-align: left;
+    order: 3;
+}
+.skill{
+    color:#bbb;
+}
+.list_section input[type=text]{
+    width: 30px;
+    font-size: 12px;
+    text-align: center;
+    border: 0;
+    border-bottom: 1px solid black;
+    order: 2;
+}
+.list_section input[type=checkbox]{
+    width: 10px;
+    height: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    order: 1;
+}
+.list_section input[type=checkbox]:checked{
+    background-color: black;
+}
+.passive_perseption_box{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+.passive_perseption_box input{
+    width: 30px;
+    height: 28px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+#other_prof{
+    height: 26em;
+}
+.combat{
+    background-color: #eee;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+}
+.combat div{
+    overflow: hidden;
+}
+.armor_class,.initiative, .speed{
+    display: flex;
+    flex-direction: column-reverse;
+    flex-basis: 33.333%;
+    align-items: center;
+    margin-top: 10px;
+}
+.armor_class label,.initiative label, .speed label{
+    font-size: 8px;
+    width: 50px;
+    border: 1px solid black;
+    border-top: 0;
+    background-color: white;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 0 0 10px 10px;
+}
+.armor_input,.initiative input, .speed input{
+    height: 70px;
+    width: 70px;
+    border-radius: 10px;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 30px;
+}
+.hp{
+    flex-basis: 100%;
+}
+.regular{
+    background-color: white;
+    border: 1px solid black;
+    margin: 10px;
+    margin-bottom: 5px;
+    border-radius: 10px 10px 0 0;
+}
+.max{
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+.max label{
+    font-size: 10px;
+    text-transform: none;
+    color: #bbb;
+}
+.max input{
+    width: 40%;
+    border: 0;
+    border-bottom: 1px solid #ddd;
+    font-size: 12px;
+    text-align: center;
+}
+.current{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.current label{
+    font-size: 10px;
+    padding-bottom: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+.current input{
+    border: 0;
+    width: 100%;
+    padding: 1em 0;
+    font-size: 20px;
+    text-align: center;
+}
+.temporary{
+    margin: 10px;
+    margin-top: 0;
+    border: 1px solid black;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: white;
+}
+.temporary label{
+    font-size: 10px;
+    padding-bottom: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+.temporary input{
+    padding: 1em 0;
+    font-size: 20px;
+    border: 0;
+    text-align: center;
+}
+.hit_dice, .death_saves{
+    flex: 1 50%;
+    height: 100px;
+}
+.hit_dice div, .death_saves div{
+    height: 80px;
+}
+.hit_dice div{
+    background-color: white;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.total{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+    padding: 5px 0;
+}
+.total label{
+    font-size: 10px;
+    color: #bbb;
+    margin: 0.25em;
+    text-transform: none;
+}
+.total input{
+    font-size: 12px;
+    flex-grow: 1;
+    border: 0;
+    border-bottom: 1px solid #ddd;
+    width: 50%;
+    margin-right: 0.25em;
+    padding: 0 0.25em;
+    text-align: center;
+}
+.remaining{
+    flex: 1;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.remaining label{
+    text-align: center;
+    padding: 2px;
+    font-size: 10px;
+}
+.remaining input{
+    text-align: center;
+    border: 0;
+    flex: 1;
+}
+.death_saves div{
+    margin: 10px;
+    background: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.death_saves .label{
+    text-align: center;
+}
+.death_saves .label label{
+    font-size: 10px;
+}
+.marks{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+}
+.successes, .fails{
+    display: flex;
+    align-items: center;
+}
+.successes label, .fails label{
+    font-size: 8px;
+    text-align: right;
+    flex: 1 50%;
+}
+.bubbles{
+    flex: 1 40%;
+    margin-left: 5px;
+}
+.bubbles input[type=checkbox]{
+    width: 10px;
+    height: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
