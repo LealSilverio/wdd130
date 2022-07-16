@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Libre+Baskerville&display=swap');
+
 body{
     margin: 0;
 	font-size: 12px;
@@ -8,12 +10,18 @@ h2{
     margin: 15px 0 10px 0;
 	font-size: 2.5em;
 	text-align: center;
+    font-family: sans-serif;
+    font-kerning: normal;
 }
 h3{
     margin: 5px;
     font-size: 1.3em;
     font-weight: 400;
     color: #362a4d;
+    font-family: sans-serif;
+}
+p{
+    font-family: 'Libre Baskerville', serif;
 }
 img{
 	width: 40%;
@@ -66,12 +74,14 @@ footer h5{
     text-align: center;
     padding: 17px 0;
     font-size: 1em;
+    font-family: 'Libre Baskerville', serif;
 }
 .subtitle{
     margin: 5px;
     font-size: 1.3em;
     text-align: center;
     font-weight: 600;
+    font-family: 'Libre Baskerville', serif;
 }
 section{
     display: flex;
@@ -79,6 +89,7 @@ section{
 }
 .title{
     margin: 20px 0 40px 0;
+    font-family: sans-serif;
 }
 .hero{
     width: 100%;
@@ -89,6 +100,7 @@ section{
 }
 .text p{
     font-size: 1.5em;
+    font-family: 'Libre Baskerville', serif;
 }
 .dnd{
     font-size: 1.7em;
@@ -107,6 +119,7 @@ section{
     padding: 15px 30px;
     margin: 200px 0;
     border-radius: 5px;
+    font-family: sans-serif;
 }
 .basics:hover, .display:hover{
     background-color: #9ba7c9;

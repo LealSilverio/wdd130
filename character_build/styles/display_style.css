@@ -1,22 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Libre+Baskerville&display=swap');
+
 body{
     margin: 0;
 	font-size: 12px;
 	padding: 0;
 	background-color: whitesmoke;
+    line-height: 1.15;
+}
+p{
+    font-family: 'Libre Baskerville', serif;
+}
+ul{
+    padding: 0;
 }
 h2{
     margin: 15px 0 10px 0;
 	font-size: 2.5em;
 	text-align: center;
+    font-family: sans-serif;
 }
 h3{
     margin: 5px;
     font-size: 1.3em;
     font-weight: 400;
     color: #362a4d;
+    font-family: sans-serif;
 }
-
-
 #navbar .site_name{
     float: left;
     margin-top: 14px;
@@ -55,6 +64,9 @@ h3{
 .sticky + .content{
     padding-top: 60px;
 }
+main{
+    margin-top: 60px;
+}
 .character_sheet{
     width: 800px;
     margin-top: 10px;
@@ -80,11 +92,13 @@ h3{
 }
 .name input{
     padding: 0.5em;
-    margin: 5px;
+    margin: 5px 13px;
     border: 0;
+    font-size: 1.7em;
 }
 .name label{
     padding-left: 1em;
+    font-size: 1.5em;
 }
 .other_info{
     width: 70%;
@@ -94,28 +108,32 @@ h3{
     padding-right: 1em;
 }
 .other_info ul{  
-    padding: 10px 0px 5px 0px;
+    padding: 10px 0 0 0;
+    margin-bottom: 0;
     display: flex;
     flex-wrap: wrap;
 }
 .other_info li{
     width: 33.33333%;
+    margin-bottom: 10px;
     display: flex;
     flex-direction: column-reverse;
 }
 .other_info label{
     margin-bottom: 5px;
+    font-size: 1.3em;
 }
 .other_info input{
     border: 0;
     border-bottom: 1px solid #ddd;
+    font-size: 1.5em;
 }
 .main_info{
 	display: flex; 
     justify-content: space-between;
     margin-top: 20px;
 }
-.label-container {
+.label_container {
     position: relative;
     width: 100%;
     height: 18px;
@@ -136,13 +154,13 @@ h3{
     justify-content: space-between;
 }
 .stats{
-    width: 101px;
+    width: 100px;
+    height: 700px;
     background-color: #bbb;
     border-radius: 10px;
-    padding-bottom: 5px;
 }
 .stats label{
-    font-size: 8px;
+    font-size: 1.3em;
     font-weight: bold;
 }
 .stats ul{
@@ -150,7 +168,9 @@ h3{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 100%;
+    height: 97%;
+    padding: 7px;
+    margin: 0;
 }
 .stats li{
     height: 80px;
@@ -169,7 +189,7 @@ h3{
 }
 .score input{
     text-align: center;
-    font-size: 40px;
+    font-size: 3em;
     padding: 2px 0px 0px 0px;
     background: white;
 }
@@ -185,22 +205,12 @@ h3{
     margin: -1px;
     text-align: center;
 }
-.inspiration_box{
+.inspiration_box, .proficiency_box{
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-end;
 }
-.inspiration_box input{
-    border: 1px solid black;
-    padding: 15px;
-    border-radius: 10px;
-}
-.proficiency_box{
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-end;
-}
-.proficiency_box input{
+.inspiration_box input, .proficiency_box input{
     width: 30px;
     height: 28px;
     border: 1px solid black;
@@ -217,7 +227,6 @@ h3{
     margin-bottom: 2.5px;
     text-align: center;
     text-transform: uppercase;
-    font-size: 10px;
     font-weight: bold;
 }
 .list_section li{
@@ -227,7 +236,6 @@ h3{
 }
 .list_section label{
     text-transform: none;
-    font-size: 8px;
     text-align: left;
     order: 3;
 }
@@ -236,7 +244,6 @@ h3{
 }
 .list_section input[type=text]{
     width: 30px;
-    font-size: 12px;
     text-align: center;
     border: 0;
     border-bottom: 1px solid black;
@@ -284,7 +291,7 @@ h3{
     margin-top: 10px;
 }
 .armor_class label,.initiative label, .speed label{
-    font-size: 8px;
+    font-size: 1.3em;
     width: 50px;
     border: 1px solid black;
     border-top: 0;
@@ -294,13 +301,13 @@ h3{
     padding-bottom: 5px;
     border-radius: 0 0 10px 10px;
 }
-.armor_input,.initiative input, .speed input{
+.armor_class input,.initiative input, .speed input{
     height: 70px;
     width: 70px;
     border-radius: 10px;
     border: 1px solid black;
     text-align: center;
-    font-size: 30px;
+    font-size: 3em;
 }
 .hp{
     flex-basis: 100%;
@@ -318,7 +325,6 @@ h3{
     align-items: baseline;
 }
 .max label{
-    font-size: 10px;
     text-transform: none;
     color: #bbb;
 }
@@ -326,7 +332,6 @@ h3{
     width: 40%;
     border: 0;
     border-bottom: 1px solid #ddd;
-    font-size: 12px;
     text-align: center;
 }
 .current{
@@ -334,7 +339,6 @@ h3{
     flex-direction: column-reverse;
 }
 .current label{
-    font-size: 10px;
     padding-bottom: 5px;
     text-align: center;
     font-weight: bold;
@@ -356,7 +360,6 @@ h3{
     background-color: white;
 }
 .temporary label{
-    font-size: 10px;
     padding-bottom: 5px;
     text-align: center;
     font-weight: bold;
@@ -389,13 +392,11 @@ h3{
     padding: 5px 0;
 }
 .total label{
-    font-size: 10px;
     color: #bbb;
     margin: 0.25em;
     text-transform: none;
 }
 .total input{
-    font-size: 12px;
     flex-grow: 1;
     border: 0;
     border-bottom: 1px solid #ddd;
@@ -412,7 +413,6 @@ h3{
 .remaining label{
     text-align: center;
     padding: 2px;
-    font-size: 10px;
 }
 .remaining input{
     text-align: center;
@@ -430,9 +430,6 @@ h3{
 .death_saves .label{
     text-align: center;
 }
-.death_saves .label label{
-    font-size: 10px;
-}
 .marks{
     display: flex;
     flex: 1;
@@ -444,7 +441,6 @@ h3{
     align-items: center;
 }
 .successes label, .fails label{
-    font-size: 8px;
     text-align: right;
     flex: 1 50%;
 }
@@ -457,4 +453,129 @@ h3{
     height: 10px;
     border: 1px solid black;
     border-radius: 10px;
+}
+.bubbles input[type=checkbox]:checked{
+    background-color: black;
+}
+.actions{
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.actions div{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.actions label{
+    order: 3;
+    text-align: center;
+}
+.actions table{
+    width: 100%;
+}
+.actions th{
+    color: #ddd;
+}
+.actions input{
+    width: calc(100% - 4px);
+    border: 0;
+    background-color: #eee;
+    padding: 3px;
+}
+.actions textarea{
+    border: 0;
+}
+.equipment{
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.equipment div{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.money ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.money li{
+    display: flex;
+    align-items: center;
+}
+.money label{
+    border: 1px solid black;
+    border-radius: 10px 0 0 10px;
+    border-right: 0;
+    width: 20px;
+    text-align: center;
+    padding: 3px 0;
+}
+.money input{
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 40px;
+    padding: 10px 3px;
+    text-align: center;
+}
+.equipment label{
+    order: 3;
+    text-align: center;
+    flex: 100%;
+}
+.equipment textarea{
+    flex: 1;
+    border: 0;
+}
+.characterization{
+    padding: 10px;
+    background: #bbb;
+    border-radius: 10px;
+}
+.characterization div{
+    background: white;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 5px;
+    border: 1px solid black;
+}
+.characterization label{
+    text-align: center;
+    margin-top: 3px;
+}
+.characterization textarea{
+    border: 0;
+    border-radius: 0;
+    height: 4em;
+}
+.personality{
+    border-radius: 10px 10px 0 0;
+}
+.ideals, .bonds{
+    margin-top: 10px;
+}
+.flaws{
+    border-radius: 0 0 10px 10px;
+}
+.features{
+    padding: 10px;
+}
+.features div{
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.features label{
+    text-align: center;
+}
+.features textarea{
+    border: 0;
+    padding: 5px;
+    height: 43em;
 }
