@@ -2,19 +2,48 @@ body{
     margin: 0;
 	font-size: 12px;
 	padding: 0;
-	background-color: #b1bcdd;
+	background-color: whitesmoke;
+}
+h2{
+    margin: 15px 0 10px 0;
+	font-size: 2.5em;
+	text-align: center;
+}
+h3{
+    margin: 5px;
+    font-size: 1.3em;
+    font-weight: 400;
+    color: #362a4d;
+}
+img{
+	width: 40%;
+}
+#navbar .site_name{
+    float: left;
+    margin-top: 14px;
+    font-size: 1.3em;
 }
 #navbar{
     overflow: hidden;
-    background-color: #b1bcdd;
+    background-color: #afbbdd;
 }
-#navbar a{
-    float: left;
+#navbar .link{
+    float: right;
     display: block;
-    color: #9283ad;
+    color: #362a4d;
     text-align: center;
     padding: 14px;
     text-decoration: none;
+    margin-right: 50px;
+    font-size: 1.3em;
+}
+#navbar .link:hover{
+    background-color: #9283ad;
+}
+#navbar .logo{
+    float: left;
+    width: 80px;
+    margin-left: 20px;
 }
 .content{
     padding: 16px;
@@ -27,35 +56,52 @@ body{
 .sticky + .content{
     padding-top: 60px;
 }
-.logo{
-	width: 40px;
+footer{
+    background-color: #afbbdd;
 }
-img{
-	width: 100%;
+footer h5{
+    text-align: center;
+    padding: 17px 0;
+    font-size: 1em;
 }
-h2{
-    margin: 0;
-	font-size: 2.5em;
-	text-align: center;
+
+.subtitle{
+    margin: 5px;
+    font-size: 1.3em;
+    text-align: center;
+    font-weight: 600;
 }
-.purpose{
-	font-size: 1.5em;
+section{
+    display: flex;
+    align-items: center;
+}
+.title{
+    margin: 15px 0 35px 0;
+}
+.hero{
+    width: 100%;
+}
+.text{
 	text-align: justify;
-	margin: 50px 400px;
+	margin: 50px 120px;
+}
+.text p{
+    font-size: 1.5em;
 }
 .button-box{
 	text-align: center;
+    padding: 25px;
 }
-.create, .display{
-    background-color: #b1bcdd;
-    color: #3F251B;
+.basics, .display{
+    background-color: #afbbdd;
+    color: #362a4d;
     text-decoration: none;
-    font-size: 1em;
+    font-size: 1.5em;
     padding: 15px 30px;
     margin: 200px 0;
     border-radius: 5px;
 }
-.create:hover, .display:hover{
-    background-color: #b1bcdd;
-    color: #3F251B;
+.basics:hover, .display:hover{
+    background-color: #9ba7c9;
+    color: #362a4d;
 }
