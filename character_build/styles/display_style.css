@@ -4,7 +4,7 @@ body{
     margin: 0;
 	font-size: 12px;
 	padding: 0;
-	background-color: whitesmoke;
+	background-color: #afbbdd;
     line-height: 1.15;
 }
 p{
@@ -66,6 +66,11 @@ h3{
 }
 main{
     margin-top: 60px;
+}
+form{
+    background-color: whitesmoke;
+    padding: 20px;
+    border-radius: 2%;
 }
 .character_sheet{
     width: 800px;
@@ -141,6 +146,7 @@ main{
     border: 1px solid black;
     border-left: 0;
     text-align: center;
+    background-color: white;
 }
 .left, .middle, .right{
     width: 32%;
@@ -158,6 +164,7 @@ main{
     height: 700px;
     background-color: #bbb;
     border-radius: 10px;
+    margin-right: 15px;
 }
 .stats label{
     font-size: 1.3em;
@@ -210,17 +217,28 @@ main{
     flex-direction: row-reverse;
     justify-content: flex-end;
 }
-.inspiration_box input, .proficiency_box input{
+.proficiency_box input{
     width: 30px;
     height: 28px;
     border: 1px solid black;
     text-align: center;
     border-radius: 10px;
 }
+.inspiration_box input{
+    appearance: none;
+    border: 1px solid black;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: white;
+    width: 30px;
+    height: 28px;
+    margin: 0 0 5px 0;
+}
 .list_section{
     border: 1px solid black;
     border-radius: 10px;
     padding: 10px 5px;
+    background-color: white;
 }
 .list_section .label{
     margin-top: 10px;
@@ -250,19 +268,20 @@ main{
     order: 2;
 }
 .list_section input[type=checkbox]{
-    width: 10px;
-    height: 10px;
-    border: 1px solid black;
-    border-radius: 10px;
     order: 1;
 }
-.list_section input[type=checkbox]:checked{
-    background-color: black;
+.skills, .saves{
+    margin-top: 10px;
 }
 .passive_perseption_box{
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-end;
+    margin-top: 10px;
+    padding: 5px;
+}
+.passive_perseption_box label{
+    font-size: 1.3em;
 }
 .passive_perseption_box input{
     width: 30px;
@@ -270,9 +289,19 @@ main{
     text-align: center;
     border: 1px solid black;
     border-radius: 10px;
+    font-size: 1.3em;
 }
-#other_prof{
-    height: 26em;
+.other_prof_box{
+    margin-top: 15px;
+}
+.other_prof_box label{
+    font-size: 1.3em;
+    margin: 15px;
+}
+.other_prof_box textarea{
+    height: 20em;
+    border-radius: 5%;
+    padding: 10px 0 10px 15px;
 }
 .combat{
     background-color: #eee;
@@ -284,22 +313,24 @@ main{
     overflow: hidden;
 }
 .armor_class,.initiative, .speed{
-    display: flex;
-    flex-direction: column-reverse;
     flex-basis: 33.333%;
+}
+.armor_class div,.initiative div, .speed div{
+    display: flex;
+    flex-direction: column;
     align-items: center;
     margin-top: 10px;
 }
 .armor_class label,.initiative label, .speed label{
-    font-size: 1.3em;
-    width: 50px;
+    font-size: 1em;
     border: 1px solid black;
-    border-top: 0;
+    border-bottom: 0;
     background-color: white;
     text-align: center;
     padding-top: 5px;
-    padding-bottom: 5px;
-    border-radius: 0 0 10px 10px;
+    padding-bottom: 2px;
+    border-radius: 10px 10px 0 0;
+    width: 60px;
 }
 .armor_class input,.initiative input, .speed input{
     height: 70px;
@@ -347,7 +378,7 @@ main{
     border: 0;
     width: 100%;
     padding: 1em 0;
-    font-size: 20px;
+    font-size: 2em;
     text-align: center;
 }
 .temporary{
@@ -366,7 +397,7 @@ main{
 }
 .temporary input{
     padding: 1em 0;
-    font-size: 20px;
+    font-size: 2em;
     border: 0;
     text-align: center;
 }
@@ -395,10 +426,11 @@ main{
     color: #bbb;
     margin: 0.25em;
     text-transform: none;
+    border: none;
 }
 .total input{
     flex-grow: 1;
-    border: 0;
+    border: none;
     border-bottom: 1px solid #ddd;
     width: 50%;
     margin-right: 0.25em;
@@ -429,6 +461,7 @@ main{
 }
 .death_saves .label{
     text-align: center;
+    border: none;
 }
 .marks{
     display: flex;
@@ -447,20 +480,13 @@ main{
 .bubbles{
     flex: 1 40%;
     margin-left: 5px;
-}
-.bubbles input[type=checkbox]{
-    width: 10px;
-    height: 10px;
-    border: 1px solid black;
-    border-radius: 10px;
-}
-.bubbles input[type=checkbox]:checked{
-    background-color: black;
+    border-radius: 50%;
 }
 .actions{
     border: 1px solid black;
     border-radius: 10px;
     margin-top: 10px;
+    background-color: white;
 }
 .actions div{
     margin: 10px;
@@ -470,6 +496,7 @@ main{
 .actions label{
     order: 3;
     text-align: center;
+    font-size: 1.3em;
 }
 .actions table{
     width: 100%;
@@ -484,12 +511,19 @@ main{
     padding: 3px;
 }
 .actions textarea{
-    border: 0;
+    border: 1px solid black;
+    height: 150px;
+    border-radius: 5%;
+    margin: 10px 0;
 }
 .equipment{
     border: 1px solid black;
     border-radius: 10px;
     margin-top: 10px;
+    background-color: white;
+}
+.equipment label{
+    font-size: 1.3em;
 }
 .equipment div{
     padding: 10px;
@@ -509,11 +543,12 @@ main{
 }
 .money label{
     border: 1px solid black;
-    border-radius: 10px 0 0 10px;
-    border-right: 0;
+    border-radius: 0 10px 10px 0;
+    border-left: 0;
     width: 20px;
     text-align: center;
     padding: 3px 0;
+    font-size: 1em;
 }
 .money input{
     border: 1px solid black;
@@ -546,6 +581,7 @@ main{
 .characterization label{
     text-align: center;
     margin-top: 3px;
+    font-size: 1.3em;
 }
 .characterization textarea{
     border: 0;
@@ -560,6 +596,7 @@ main{
 }
 .flaws{
     border-radius: 0 0 10px 10px;
+    margin-top: 10px;
 }
 .features{
     padding: 10px;
@@ -570,12 +607,23 @@ main{
     border-radius: 10px;
     display: flex;
     flex-direction: column-reverse;
+    background-color: white;
 }
 .features label{
     text-align: center;
+    font-size: 1.3em;
 }
 .features textarea{
     border: 0;
     padding: 5px;
     height: 43em;
+}
+footer{
+    background-color: #afbbdd;
+}
+footer h5{
+    text-align: center;
+    padding: 17px 0;
+    font-size: 1em;
+    font-family: 'Libre Baskerville', serif;
 }
